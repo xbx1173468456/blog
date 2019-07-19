@@ -1,0 +1,37 @@
+[
+  {
+    "expand": true,
+    "text": "任务编码",
+    "value": "code",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140
+  },
+  {
+    "text": "任务名称",
+    "value": "name",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 200
+  },
+  {
+    "text": "前置任务",
+    "value": "preTask",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 100
+  },
+  {
+    "text": "备注",
+    "value": "remark",
+    "align": "left",
+    "headerAlign": "center",
+    "className": "spacing-set",
+    "showOverflowTooltip": true
+  }
+]

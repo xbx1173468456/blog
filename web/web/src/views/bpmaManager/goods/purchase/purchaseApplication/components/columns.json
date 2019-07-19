@@ -1,0 +1,99 @@
+[
+    {
+        "text": "物资编码",
+        "value": "code",
+        "width": "160",
+        "className":"spacing-set"
+    },
+    {
+        "text": "物资名称",
+        "value": "name",
+        "width": "120",
+        "className":"spacing-set"
+    },
+    {
+        "text": "规格型号",
+        "value": "model",
+        "width": "80",
+        "className":"spacing-set"
+    },
+    {
+        "text": "计量单位",
+        "value": "unit",
+        "width": "80",
+        "className":"spacing-set"
+    },
+    {
+        "text": "预算总量",
+        "value": "budgetSum",
+        "width": "130",
+        "className":"spacing-set"
+    },
+    {
+        "text": "已申请总量",
+        "value": "applyedSum",
+        "width": "130",
+        "className":"spacing-set"
+    },
+    {
+        "text": "可申请总量",
+        "value": "remainSum",
+        "width": "130",
+        "className":"spacing-set"
+    },
+    {
+        "text": "申请数量",
+        "value": "sum",
+        "align": "left",
+        "width": "130",
+        "calc":true,
+        "showTable": true,
+        "types": true,
+        "className":"spacing-set"
+    },
+    {
+        "text": "申请单价",
+        "value": "unitPrice",
+        "width": "130",
+        "showTable": true,
+        "calc":true,
+        "types": true,
+        "className":"spacing-set"
+    },
+    {
+        "text": "申请总价",
+        "value": "totalPrice",
+        "width": "140",
+        "disable":true,
+        "showTable": true,
+        "className":"spacing-set"
+    },
+    {
+        "text": "发票类型",
+        "value": "invoiceType",
+        "width": "180",
+        "select": true
+    },
+    {
+        "text": "发票税率",
+        "value": "invoiceTaxRate",
+        "width": "120",
+        "showTable": true,
+        "max":1,
+        "min":0,
+        "types": true,
+        "className":"spacing-set"
+    },
+    {
+        "text": "用料部位",
+        "value": "positon",
+        "width": "150",
+        "showTable": true
+    },
+    {
+        "text": "摘要",
+        "value": "remark",
+        "width": "150",
+        "showTable": true
+    }
+]

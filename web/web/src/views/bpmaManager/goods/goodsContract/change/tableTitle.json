@@ -1,0 +1,59 @@
+[
+  {
+    "text": "审核状态",
+    "value": "validateStatus",
+    "width": "80"
+  },
+  {
+    "text": "单据编码",
+    "value": "code",
+    "align": "center",
+    "width": "130"
+  },
+  {
+    "text": "变更名称",
+    "value": "name",
+    "width": "200"
+  },
+  {
+    "text": "项目名称",
+    "value": "proName",
+    "align": "left",
+    "width": "200"
+  },
+  {
+    "text": "合同名称",
+    "value": "contractName",
+    "width": "200"
+  },
+  {
+    "text": "原变更单号",
+    "value": "orignalCode",
+    "width": "160"
+  },
+  {
+    "text": "变更日期",
+    "value": "date",
+    "width": "160"
+  },
+  {
+    "text": "变更金额",
+    "value": "price",
+    "align": "right",
+    "width": "160"
+  },
+  {
+    "text": "变更原因",
+    "value": "reason",
+    "width": "160"
+  },
+  {
+    "text": "变更内容",
+    "value": "content",
+    "width": "160"
+  },
+  {
+    "text": "变更影响",
+    "value": "effect"
+  }
+]

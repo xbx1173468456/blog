@@ -1,0 +1,93 @@
+[
+  {
+    "text": "任务编码",
+    "value": "code",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140,
+    "expand": true
+  },
+  {
+    "text": "任务名称",
+    "value": "name",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 200
+  },
+  {
+    "text": "任务产值",
+    "value": "planValue",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 130
+  },
+  {
+    "text": "责任人员",
+    "value": "planPerson",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 100
+  },
+  {
+    "text": "前置任务",
+    "value": "planPreTask",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 100
+  },
+  {
+    "text": "计划开始",
+    "value": "planBeginDate",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140
+  },
+  {
+    "text": "计划完成",
+    "value": "planExpiryDate",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140
+  },
+  {
+    "text": "计划日历天",
+    "value": "planDays",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 110
+  },
+  {
+    "text": "计划工时天",
+    "value": "playWorkDays",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 110
+  },
+  {
+    "text": "备注",
+    "value": "planRemark",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140
+  }
+]

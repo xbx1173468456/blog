@@ -1,0 +1,63 @@
+[{
+  "prop": "validateStatus",
+  "name": "审核状态",
+  "width": 80,
+  "align": "center"
+}, {
+  "prop": "code",
+  "name": "单据编码",
+  "width": 130,
+  "align": "center"
+}, {
+  "prop": "name",
+  "name": "款项名称",
+  "width": 200
+}, {
+  "prop": "proName",
+  "name": "项目名称",
+  "width": 200
+}, {
+  "prop": "contractName",
+  "name": "合同名称",
+  "width": 200
+}, {
+  "prop": "handlePerson",
+  "name": "经办人员"
+}, {
+  "prop": "unincomePrice",
+  "name": "未收总额",
+  "width": 110
+}, {
+  "prop": "shouldIncomePriced",
+  "name": "应收总额",
+  "align": "right",
+  "width": 120
+}, {
+  "prop": "shouldIncomeDate",
+  "name": "应收日期",
+  "width": 100,
+  "align": "center"
+}, {
+  "prop": "qualityAssuranceScale",
+  "name": "质保金比例",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "qualityAssurancePrice",
+  "name": "质保金总额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "qualityAssuranceDate",
+  "name": "质保到期日期",
+  "width": 110,
+  "align": "center"
+}, {
+  "prop": "inputPerson",
+  "name": "登记人员",
+  "width": 110
+}, {
+  "prop": "inputTime",
+  "name": "登记时间",
+  "width": 160
+}]

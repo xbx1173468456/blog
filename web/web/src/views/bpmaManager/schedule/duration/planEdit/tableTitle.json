@@ -1,0 +1,64 @@
+[{
+  "prop": "validateStatus",
+  "name": "审核状态",
+  "width": 80,
+  "align": "center"
+}, {
+  "prop": "code",
+  "name": "单据编码",
+  "width": 130,
+  "align": "center"
+}, {
+  "prop": "name",
+  "name": "单据名称",
+  "width": 200
+}, {
+  "prop": "proName",
+  "name": "项目名称",
+  "width": 200
+}, {
+  "prop": "handlePerson",
+  "name": "编制人员"
+}, {
+  "prop": "handleDate",
+  "name": "编制日期",
+  "width": 100
+}, {
+  "prop": "contractBeginDate",
+  "name": "合同开工日期",
+  "width": 110,
+  "align": "center"
+}, {
+  "prop": "contractExpiryDate",
+  "name": "合同完工日期",
+  "width": 110,
+  "align": "center"
+}, {
+  "prop": "contractDays",
+  "name": "合同日历天",
+  "align": "right",
+  "width": 100
+}, {
+  "prop": "planBeginDate",
+  "name": "计划开工日期",
+  "width": 110,
+  "align": "center"
+}, {
+  "prop": "planExpiryDate",
+  "name": "计划完工日期",
+  "width": 110,
+  "align": "center"
+}, {
+  "prop": "planDays",
+  "name": "计划日历天",
+  "align": "right",
+  "width": 100
+}, {
+  "prop": "inputPerson",
+  "name": "登记人员",
+  "width": 110
+}, {
+  "prop": "inputTime",
+  "name": "登记时间",
+  "width": 160
+}]

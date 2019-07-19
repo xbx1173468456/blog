@@ -1,0 +1,102 @@
+[
+  {
+    "text": "任务编码",
+    "value": "code",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140,
+    "expand": true
+  },
+  {
+    "text": "任务名称",
+    "value": "name",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 200
+  },
+  {
+    "text": "调整后任务产值",
+    "value": "changedValue",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 130
+  },
+  {
+    "text": "调整后责任人员",
+    "value": "changedPerson",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 110
+  },
+  {
+    "text": "调整后前置任务",
+    "value": "changedPreTask",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 110
+  },
+  {
+    "text": "调整后开始",
+    "value": "changedBeginDate",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140
+  },
+  {
+    "text": "调整后完成",
+    "value": "changedExpiryDate",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140
+  },
+  {
+    "text": "调整后日历天",
+    "value": "changedDays",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 110
+  },
+  {
+    "text": "调整后工时天",
+    "value": "changedWorkDays",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 110
+  },
+  {
+    "text": "是否有效",
+    "value": "type",
+    "align": "center",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140
+  },
+  {
+    "text": "备注",
+    "value": "changedRemark",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "className": "spacing-set",
+    "width": 140
+  }
+]

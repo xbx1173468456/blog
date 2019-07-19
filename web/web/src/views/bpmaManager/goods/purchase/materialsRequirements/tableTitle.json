@@ -1,0 +1,37 @@
+[
+    {
+     "text": "审核状态",
+     "value": "validateStatus",
+     "width":"80"
+   },
+   {
+     "text": "单据编码",
+     "value": "code",
+     "width":"130"
+   },
+   {
+     "text": "单据名称",
+     "value": "name",
+     "width":"100",
+     "align":"left"
+   },
+   {
+     "text": "项目名称",
+     "value": "proName",
+     "width":"160"
+   },
+   {
+     "text": "需求人员",
+     "value": "person",
+     "width":"130"
+   },
+    {
+     "text": "提出日期",
+     "value": "date",
+     "width":"100"
+   },
+    {
+     "text": "用料说明",
+     "value": "requireExplain"
+   }
+  ]

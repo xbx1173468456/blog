@@ -1,0 +1,50 @@
+[{
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+}, {
+    "prop": "code",
+    "name": "单据编码",
+    "align": "center",
+    "width": 130
+}, {
+    "prop": "name",
+    "name": "单据名称",
+    "width": 200
+}, {
+    "prop": "proName",
+    "name": "项目名称",
+    "width": 200
+}, {
+    "prop": "handlePerson",
+    "name": "报销人员"
+}, {
+    "prop": "applyPrice",
+    "name": "报销金额",
+    "align": "right",
+    "width": 110
+}, {
+    "prop": "borrowPrice",
+    "name": "未还借款金额",
+    "align": "right",
+    "width": 110
+}, {
+    "prop": "cancelPrice",
+    "name": "本次核销金额",
+    "align": "right",
+    "width": 110
+}, {
+    "prop": "returnPrice",
+    "name": "退还金额",
+    "align": "right",
+    "width": "110"
+},  {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+}, {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+}]

@@ -1,0 +1,59 @@
+[{
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+}, {
+    "prop": "code",
+    "name": "单据编码",
+    "align": "center",
+    "width": 130
+}, {
+    "prop": "name",
+    "name": "单据名称",
+    "width": 200
+}, {
+    "prop": "proName",
+    "name": "项目名称",
+    "width": 200
+}, {
+    "prop": "handlePerson",
+    "name": "借款人员",
+    "align": "center"
+}, {
+    "prop": "handleDate",
+    "name": "借款日期",
+    "align": "center",
+    "width": 100
+}, {
+    "prop": "applyPrice",
+    "name": "本次申请金额",
+    "align": "right",
+    "width": 110
+}, {
+    "prop": "payPrice",
+    "name": "本次实付金额",
+    "align": "right",
+    "width": 110
+}, {
+    "prop": "payMode",
+    "name": "支付方式"
+}, {
+    "prop": "payAccount",
+    "name": "付款账号",
+    "align": "center",
+    "width": 190
+}, {
+    "prop": "incomeAccount",
+    "name": "收款账号",
+    "align": "center",
+    "width": 190
+},  {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+}, {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+}]

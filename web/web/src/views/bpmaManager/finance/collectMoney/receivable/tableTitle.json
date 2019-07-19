@@ -1,0 +1,27 @@
+[{
+    "prop": "contractName",
+    "name": "合同名称",
+    "width": 200
+}, {
+    "prop": "billName",
+    "name": "款项名称",
+    "width": 200
+}, {
+    "prop": "price",
+    "name": "应收金额",
+    "width": 110
+}, {
+    "prop": "date",
+    "name": "应收日期",
+    "align": "center",
+    "width": 100
+}, {
+    "prop": "billType",
+    "name": "单据来源类型",
+    "align": "center",
+    "width": 110
+}, {
+    "prop": "inputTime",
+    "name": "生成时间",
+    "width": 160
+}]

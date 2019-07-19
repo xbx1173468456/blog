@@ -1,0 +1,25 @@
+[{
+  "prop": "code",
+  "name": "单位编码"
+}, {
+  "prop": "name",
+  "name": "单位名称"
+}, {
+  "prop": "creditCode",
+  "name": "信用代码"
+}, {
+  "prop": "typeName",
+  "name": "单位类型"
+}, {
+  "prop": "legalPerson",
+  "name": "法人代表"
+}, {
+  "prop": "foundTime",
+  "name": "成立日期"
+}, {
+  "prop": "website",
+  "name": "官方网站"
+}, {
+  "prop": "remark",
+  "name": "补充说明"
+}]

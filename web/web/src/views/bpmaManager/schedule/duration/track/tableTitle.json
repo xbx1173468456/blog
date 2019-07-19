@@ -1,0 +1,139 @@
+[
+  {
+    "text": "任务编码",
+    "value": "code",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140,
+    "expand": true
+  },
+  {
+    "text": "任务名称",
+    "value": "name",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 200
+  },
+  {
+    "text": "任务状态",
+    "value": "taskStatus",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 130
+  },
+  {
+    "text": "应该完成比例",
+    "value": "shouldFinishScale",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 130
+  },
+  {
+    "text": "累计完成比例",
+    "value": "finishScale",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 110
+  },
+  {
+    "text": "应该完成产值",
+    "value": "shouldFinishValue",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 110
+  },
+  {
+    "text": "累计完成产值",
+    "value": "finishValue",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140
+  },
+  {
+    "text": "原计划产值",
+    "value": "planValue",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 110
+  },
+  {
+    "text": "调整后产值",
+    "value": "changedValue",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140
+  },
+  {
+    "text": "计划开工日期",
+    "value": "planBeginDate",
+    "align": "center",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 110
+  },
+  {
+    "text": "调整后开工日期",
+    "value": "changedBeginDate",
+    "align": "center",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140
+  },
+  {
+    "text": "计划完工日期",
+    "value": "planExpiryDate",
+    "align": "center",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 110
+  },
+  {
+    "text": "调整后完工日期",
+    "value": "changedExpiryDate",
+    "align": "center",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140
+  },
+  {
+    "text": "调整后日历天",
+    "value": "changedDays",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 110
+  },
+  {
+    "text": "调整后工时天",
+    "value": "changedWorkDays",
+    "align": "right",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140
+  },
+  {
+    "text": "形象进度说明",
+    "value": "finishSummary",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 140
+  },
+  {
+    "text": "形象进度图片",
+    "value": "scheduleImage",
+    "align": "left",
+    "headerAlign": "center",
+    "showOverflowTooltip": true,
+    "width": 110
+  }
+]

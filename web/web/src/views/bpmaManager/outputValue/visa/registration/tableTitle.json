@@ -1,0 +1,94 @@
+[
+  {
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+  },
+  {
+    "prop": "code",
+    "name": "单据编码",
+    "align": "center",
+    "width": 130
+  },
+  {
+    "prop": "name",
+    "name": "签证名称",
+    "width": 200
+  },
+  {
+    "prop": "proName",
+    "name": "项目名称",
+    "width": 200
+  },
+  {
+    "prop": "contractName",
+    "name": "合同名称",
+    "width": 200
+  },
+  {
+    "prop": "orignalCode",
+    "name": "原签证单号",
+    "width": 120
+  },
+  {
+    "prop": "approvePrice",
+    "name": "内部核定金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "applyPrice",
+    "name": "签证上报金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "payPrice",
+    "name": "签证批复金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "visafileMasterCode",
+    "name": "签证资料单号",
+    "width": 120,
+    "align": "center"
+  },
+  {
+    "prop": "handlePerson",
+    "name": "签证人员"
+  },
+  {
+    "prop": "handleDate",
+    "name": "签证日期",
+    "width": 100
+  },
+  {
+    "prop": "ifPay",
+    "name": "是否结算",
+    "align": "center"
+  },
+  {
+    "prop": "payedPrice",
+    "name": "结算金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "payedCode",
+    "name": "结算单号",
+    "width": 120,
+    "align": "center"
+  },
+  {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+  },
+  {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+  }
+]
