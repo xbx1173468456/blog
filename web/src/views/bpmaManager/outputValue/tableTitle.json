@@ -1,0 +1,70 @@
+[
+  {
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+  },
+  {
+    "prop": "code",
+    "name": "单据编码",
+    "align": "center",
+    "width": 130
+  },
+  {
+    "prop": "name",
+    "name": "资料名称",
+    "width": 200
+  },
+  {
+    "prop": "proName",
+    "name": "项目名称",
+    "width": 200
+  },
+  {
+    "prop": "contractName",
+    "name": "合同名称",
+    "width": 200
+  },
+  {
+    "prop": "beginDate",
+    "name": "计划开始日期",
+    "width": 110,
+    "align": "center"
+  },
+  {
+    "prop": "finishDate",
+    "name": "计划完成日期",
+    "width": 110,
+    "align": "center"
+  },
+  {
+    "prop": "days",
+    "name": "计划日历天",
+    "width": 100
+  },
+  {
+    "prop": "handlePerson",
+    "name": "承办人员"
+  },
+  {
+    "prop": "handleDate",
+    "name": "承办日期",
+    "width": 100
+  },
+  {
+    "prop": "ifFinish",
+    "name": "是否完成",
+    "align": "center"
+  },
+  {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+  },
+  {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+  }
+]

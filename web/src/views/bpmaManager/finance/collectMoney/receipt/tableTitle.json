@@ -1,0 +1,47 @@
+[{
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+}, {
+    "prop": "code",
+    "name": "单据编码",
+    "align": "center",
+    "width": 130
+}, {
+    "prop": "name",
+    "name": "款项名称",
+    "width": 200
+}, {
+    "prop": "proName",
+    "name": "项目名称",
+    "width": 200
+}, {
+    "prop": "contractName",
+    "name": "合同名称",
+    "width": 200
+}, {
+    "prop": "payPrice",
+    "name": "本次收款总额",
+    "align": "right",
+    "width": 110
+}, {
+    "prop": "payMode",
+    "name": "收款方式"
+}, {
+    "prop": "payAccount",
+    "name": "付款账号",
+    "width": 190
+}, {
+    "prop": "incomeAccount",
+    "name": "收款账号",
+    "width": 190
+}, {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+}, {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+}]

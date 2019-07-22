@@ -1,0 +1,61 @@
+[
+  {
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "width": 80,
+    "align": "center"
+  },
+  {
+    "prop": "code",
+    "name": "单据编码",
+    "width": 130,
+    "align": "center"
+  },
+  {
+    "prop": "name",
+    "name": "单据名称",
+    "width": 200
+  },
+  {
+    "prop": "proName",
+    "name": "项目名称",
+    "width": 200
+  },
+  {
+    "prop": "handlePerson",
+    "name": "调整人员"
+  },
+  {
+    "prop": "handleDate",
+    "name": "编制日期",
+    "width": 100
+  },
+  {
+    "prop": "changedBeginDate",
+    "name": "调整后开工日期",
+    "width": 120,
+    "align": "center"
+  },
+  {
+    "prop": "changedExpiryDate",
+    "name": "调整后完工日期",
+    "width": 120,
+    "align": "center"
+  },
+  {
+    "prop": "changedDays",
+    "name": "调整后日历天",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+  },
+  {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+  }
+]

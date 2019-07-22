@@ -1,0 +1,60 @@
+[
+    {
+     "text": "审核状态",
+     "value": "validateStatus",
+     "width":"80"
+   },
+   {
+     "text": "单据编码",
+     "value": "code",
+     "width":"130"
+   },
+   {
+     "text": "单据名称",
+     "value": "name",
+     "width":"90"
+   },
+   {
+     "text": "项目名称",
+     "value": "proName",
+     "width":"140"
+   },
+   {
+     "text": "询价单位",
+     "value": "enterprise",
+     "width":"180",
+     "align":"left"
+   },
+    {
+     "text": "报价截止日期",
+     "value": "offerExpiryDate",
+     "width":"110"
+   },
+    {
+     "text": "询价人员",
+     "value": "person",
+     "width":"120"
+   },
+   {
+    "text": "联系电话",
+    "value": "telephone",
+    "width":"120"
+  },
+  {
+    "text": "联系邮箱",
+    "value": "email",
+    "width":"160"
+  },
+  {
+    "text": "送货地址",
+    "value": "address",
+    "width":"180",
+    "align":"left"
+  },
+  {
+    "text": "询价说明",
+    "value": "inquiryExplain",
+    "width":"180",
+    "align":"left"
+  }
+  ]

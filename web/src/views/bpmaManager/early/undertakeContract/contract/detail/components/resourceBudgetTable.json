@@ -1,0 +1,40 @@
+[{
+  "prop": "resTypeName",
+  "name": "资源类型"
+}, {
+  "prop": "resCode",
+  "name": "资源编码"
+}, {
+  "prop": "resName",
+  "name": "资源名称"
+}, {
+  "prop": "model",
+  "name": "规格型号"
+}, {
+  "prop": "units",
+  "name": "计量单位"
+}, {
+  "prop": "contractSum",
+  "name": "合同数量"
+}, {
+  "prop": "contractUnitPrice",
+  "name": "合同单价"
+}, {
+  "prop": "contractTotalPrice",
+  "name": "合同金额"
+}, {
+  "prop": "ifSubcontract",
+  "name": "是否分包"
+}, {
+  "prop": "subQuantities",
+  "name": "分包数量"
+}, {
+  "prop": "subUnitPrice",
+  "name": "分包单价"
+}, {
+  "prop": "subTotalPrice",
+  "name": "分包金额"
+}, {
+  "prop": "summary",
+  "name": "摘要"
+}]

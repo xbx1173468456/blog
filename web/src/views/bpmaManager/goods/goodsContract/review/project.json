@@ -1,0 +1,40 @@
+[{
+  "prop": "code",
+  "name": "系统编码"
+}, {
+  "prop": "name",
+  "name": "项目名称"
+}, {
+  "prop": "fullName",
+  "name": "项目全称"
+}, {
+  "prop": "orignalCode",
+  "name": "原始编码"
+}, {
+  "prop": "typeName",
+  "name": "项目类型"
+}, {
+  "prop": "year",
+  "name": "年度批次"
+}, {
+  "prop": "nature",
+  "name": "建设性质"
+}, {
+  "prop": "stage",
+  "name": "项目阶段"
+}, {
+  "prop": "area",
+  "name": "业务区域"
+}, {
+  "prop": "district",
+  "name": "行政区划"
+}, {
+  "prop": "buildEnterprise",
+  "name": "建设单位"
+}, {
+  "prop": "designEnterprise",
+  "name": "设计单位"
+}, {
+  "prop": "superviseEnterprise",
+  "name": "监理单位"
+}]

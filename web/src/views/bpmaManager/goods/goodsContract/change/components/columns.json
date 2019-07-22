@@ -1,0 +1,55 @@
+[
+  {
+      "text": "物资编码",
+      "value": "code",
+      "width":"160"
+  },
+  {
+      "text": "物资名称",
+      "value": "name",
+      "width":"120"
+  },
+  {
+      "text": "规格型号",
+      "value": "model",
+      "width":"100"
+  },
+  {
+      "text": "计量单位",
+      "value": "unit",
+      "width":"100"
+  },
+  {
+      "text": "预算数量",
+      "value": "sum",
+      "width":"150",
+      "showTable":true,
+      "types":true
+  },
+  {
+      "text": "预算单价",
+      "value": "unitPrice",
+      "width":"150",
+      "showTable":true,
+      "types":true
+  },
+  {
+      "text": "预算合价",
+      "value": "totalPrice",
+      "width":"150",
+      "types":true
+  },
+  {
+      "text": "用料部位",
+      "value": "postion",
+      "width":"200",
+      "showTable":true
+  },
+  {
+      "text": "摘要",
+      "value": "summary",
+      "align":"left",
+      "width":"300",
+      "showTable":true
+  }
+]

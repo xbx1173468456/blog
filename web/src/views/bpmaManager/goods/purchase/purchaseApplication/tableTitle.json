@@ -1,0 +1,39 @@
+[
+    {
+     "text": "审核状态",
+     "value": "validateStatus",
+     "align": "center",
+     "width":"80"
+   },
+   {
+     "text": "单据编码",
+     "value": "code",
+     "align": "center",
+     "width":"130"
+   },
+   {
+     "text": "单据名称",
+     "value": "name",
+     "width":"200"
+   },
+   {
+     "text": "项目名称",
+     "value": "proName",
+     "width":"200"
+   },
+   {
+    "text": "申请人员",
+    "value": "handlePerson",
+    "width":"100"
+  },
+   {
+     "text": "申请总额",
+     "value": "price",
+     "align": "right",
+     "width":"120"
+   },
+    {
+     "text": "申请说明",
+     "value": "applyExplain"
+   }
+  ]

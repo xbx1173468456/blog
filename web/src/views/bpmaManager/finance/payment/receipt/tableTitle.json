@@ -1,0 +1,71 @@
+[{
+  "prop": "validateStatus",
+  "name": "审核状态",
+  "align": "center",
+  "width": 80
+}, {
+  "prop": "code",
+  "name": "单据编码",
+  "align": "center",
+  "width": 130
+}, {
+  "prop": "name",
+  "name": "单据名称",
+  "width": 200
+}, {
+  "prop": "proName",
+  "name": "项目名称",
+  "width": 200
+}, {
+  "prop": "subEnterpriseName",
+  "name": "分包单位",
+  "width": 200
+}, {
+  "prop": "contractName",
+  "name": "合同名称",
+  "width": 200
+}, {
+  "prop": "beforeTaxPrice",
+  "name": "价税合计金额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "afterTaxPrice",
+  "name": "税后合计金额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "tax",
+  "name": "进项税额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "invoiceType",
+  "name": "发票类型",
+  "width": 120
+}, {
+  "prop": "invoiceTaxRate",
+  "name": "发票税率",
+  "align": "right"
+}, {
+  "prop": "invoiceMedium",
+  "name": "发票介质"
+}, {
+  "prop": "incoiceCode",
+  "name": "发票代码",
+  "width": 120,
+  "align": "center"
+}, {
+  "prop": "incoiceNumber",
+  "name": "发票号码",
+  "width": 90,
+  "align": "center"
+}, {
+  "prop": "inputPerson",
+  "name": "登记人员",
+  "width": 110
+}, {
+  "prop": "inputTime",
+  "name": "登记时间",
+  "width": 160
+}]

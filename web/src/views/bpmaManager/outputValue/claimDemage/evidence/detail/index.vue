@@ -1,0 +1,358 @@
+<template>
+  <div :style="windowHeight" class="addFrom">
+    <basic-handler>
+      <el-button @click="initProjectFormData" icon="el-icon-plus" plain size="small" type="primary">新增证据</el-button>
+      <el-button :disabled="disabled" @click="save" icon="el-icon-if-save" plain size="small" type="primary">保存
+      </el-button>
+      <el-button :disabled="disabled || !formData.id" @click="deleteData" icon="el-icon-delete" plain size="small"
+                 type="danger">删除
+      </el-button>
+      <el-button :disabled="disabled" @click="review" icon="el-icon-if-auth" plain size="small" type="primary">审核
+      </el-button>
+    </basic-handler>
+    <el-form :model="formData" :rules="rules" class="form-container" ref="form">
+      <el-row :gutter="10">
+        <el-col :span="8">
+          <basic-validate-status :model="formData"></basic-validate-status>
+        </el-col>
+        <el-col :span="8">
+          <basic-form-item label="单据编码">
+            <basic-input disabled placeholder="自动生成单据编码" v-model="formData.code"></basic-input>
+          </basic-form-item>
+        </el-col>
+        <el-col :span="8">
+          <basic-form-item label="证据名称" prop="name">
+            <basic-input :disabled="disabled" placeholder="请输入证据名称" v-model="formData.name"></basic-input>
+          </basic-form-item>
+        </el-col>
+      </el-row>
+      <el-row :gutter="10">
+        <el-col :span="8">
+          <basic-form-item label="项目名称" prop="proName">
+            <el-input :disabled="disabled" readOnly placeholder="请选择项目名称" v-model="formData.proName" size="small">
+              <el-button @click="toipClick('project')" class="el-button-append" icon="el-icon-plus" size="mini" :disabled="disabled"
+                         slot="append"></el-button>
+            </el-input>
+          </basic-form-item>
+        </el-col>
+        <el-col :span="8">
+          <basic-form-item label="合同名称" prop="contractName">
+            <el-input :disabled="disabled" readOnly placeholder="请选择合同名称" v-model="formData.contractName" size="small">
+              <el-button @click="toipClick('contract')" class="el-button-append" icon="el-icon-plus" size="mini" :disabled="disabled"
+                         slot="append"></el-button>
+            </el-input>
+          </basic-form-item>
+        </el-col>
+        <el-col :span="8">
+          <basic-form-item label="证据介质" prop="evidenceMediumId">
+            <el-select :disabled="disabled"
+                       @change="val => formData.evidenceMediumName = invoiceTypeSelectData.filter(res => res.id == val)[0].name"
+                       placeholder="无"
+                       size="small" v-model="formData.evidenceMediumId">
+              <el-option :key="item.id" :label="item.name" :value="item.id" v-for="item in invoiceTypeSelectData">
+              </el-option>
+            </el-select>
+          </basic-form-item>
+        </el-col>
+      </el-row>
+      <el-row :gutter="10">
+        <el-col :span="8">
+          <basic-form-item label="取证人员">
+            <basic-input :disabled="disabled" placeholder="请输入取证人员" v-model="formData.handlePerson"></basic-input>
+          </basic-form-item>
+        </el-col>
+        <el-col :span="8">
+          <basic-form-item label="所属年月">
+            <el-date-picker :disabled="disabled" placeholder="请选择日期" size="small" type="date"
+                            v-model="formData.handleDate"
+                            value-format="timestamp">
+            </el-date-picker>
+          </basic-form-item>
+        </el-col>
+      </el-row>
+      <basic-form-item label="证据内容">
+        <el-input :disabled="disabled" :maxlength="5000" :rows="textareaHeight" placeholder="请输入证据内容" type="textarea"
+                  v-model="formData.content"></el-input>
+      </basic-form-item>
+      <basic-form-item label="证据来源">
+        <el-input :disabled="disabled" :maxlength="5000" :rows="2" placeholder="请输入证据来源" type="textarea"
+                  v-model="formData.source"></el-input>
+      </basic-form-item>
+      <basic-form-item label="补充说明">
+        <el-input :disabled="disabled" :maxlength="5000" :rows="2" placeholder="请输入补充说明" type="textarea"
+                  v-model="formData.remark"></el-input>
+      </basic-form-item>
+      <basic-form-item label="文档附件" class="add-border file">
+        <basic-upload ref="refBasicUpload" :formId="formData.id" :disabled="disabled">
+        </basic-upload>
+      </basic-form-item>
+      <el-row :gutter="10">
+        <el-col :span="15">
+          <basic-form-item label="登记人员">
+            <basic-input disabled placeholder="自动生成登记人员" v-model="formData.inputPerson"></basic-input>
+          </basic-form-item>
+        </el-col>
+        <el-col :span="9">
+          <basic-form-item label="登记时间">
+            <basic-input disabled placeholder="自动生成登记时间" v-model="formData.inputTime"></basic-input>
+          </basic-form-item>
+        </el-col>
+      </el-row>
+    </el-form>
+    <basic-dialog v-el-drag-dialog :visible.sync="visibleSyncProject" title="项目名称-选择" >
+      <dialog-project @selectionChange="selectionChange" filterValid v-if="visibleSyncProject"></dialog-project>
+      <div class="dialog-footer" slot="footer">
+        <el-button @click="visibleSyncProject = false">取 消</el-button>
+        <el-button @click="handleChange" type="primary">确 定</el-button>
+      </div>
+    </basic-dialog>
+    <basic-dialog v-el-drag-dialog :visible.sync="visibleSyncContract" title="合同-选择" >
+      <dialog-my-contract :proId="formData.proId" @selectionChange="selectionChange" filterValid
+                          v-if="visibleSyncContract"></dialog-my-contract>
+      <div class="dialog-footer" slot="footer">
+        <el-button @click="visibleSyncContract = false">取 消</el-button>
+        <el-button @click="handleChange" type="primary">确 定</el-button>
+      </div>
+    </basic-dialog>
+  </div>
+</template>
+
+<script>
+  import { getDictionaryDataByTypeFilter } from '@/api/common/dataDictionary'
+  import methods from '@/utils/mixins/methods'
+  import computed from '@/utils/mixins/computed'
+  import dialogProject from '@/views/components/dialog/dialogProject'
+  import dialogMyContract from '@/views/components/dialog/dialogMyContract'
+  import {
+    deleteValueClaimEvidenceMaster,
+    reviewValueClaimEvidenceMaster,
+    saveValueClaimEvidenceMaster,
+    poatValueClaimEvidenceMaster,
+    getValueClaimEvidenceMastersDetail
+  } from '@/api/bpmaManager/outputValue/claimDemage/evidence.js'
+  export default {
+    name: 'detail',
+    mixins: [computed, methods],
+    components: {
+      dialogProject,
+      dialogMyContract
+    },
+    data() {
+      let that = this
+      return {
+        formData: (this.$route.query.formData && JSON.parse(this.$route.query.formData)) || {
+          validateStatus: 2,
+          innerPrice: '0.00',
+          reportPrice: '0.00',
+          agreePrice: '0.00'
+        },
+        isUpdate: true,
+        rules: {
+          contractName: [{ required: true, trigger: 'change' }],
+          evidenceMediumId: [{ required: true, trigger: 'change' }],
+          name: [{ required: true, trigger: 'change' }],
+          proName: [{ required: true, trigger: 'change' }],
+          validateStatus: [{ required: true, trigger: 'change' }]
+        },
+        type: null,
+        invoiceTypeSelectData: [],
+        visibleSyncProject: false,
+        visibleSyncContract: false,
+        selectedRow: {}
+      }
+    },
+    computed: {
+      disabled() {
+        if (this.validateStatus) {
+          return this.formData.validateStatus == this.validateStatus.code
+        }
+      },
+      validateStatus() {
+        if (!Array.isArray(this.dataEnum.validateStatus)) return {}
+        return this.dataEnum.validateStatus.filter(item => item.name === '已审核')[0]
+      },
+      windowHeight() {
+        return {
+          height: this.$store.state.app.screenHeight - 120 + 'px'
+        }
+      },
+      textareaHeight() {
+        return parseInt(((this.$store.state.app.screenHeight - 133) - 45 * 10) / 25)
+      }
+    },
+    watch: {
+      formData: {
+        handler() {
+          this.isUpdate = false
+        },
+        deep: true
+      }
+    },
+    async created() {
+      this.$store.dispatch("cacheId", '0')
+      this.getEnumData(['GetValidateStatusData', 'GetIsOrNotData'])
+      const invoiceTypeSelectData = await getDictionaryDataByTypeFilter('BPMA_EVIDENCE_MEDIUM')
+      this.invoiceTypeSelectData = invoiceTypeSelectData.data
+    },
+    activated() {
+      this.$utilsBasic.loadAddAndDetailData(this, () => {
+        this.initProjectFormData()
+        this.$store.dispatch("cacheId", false);
+      }, async id => {
+        if (this.$route.params.detail != 'detail') {
+          await this.getValueClaimEvidenceMastersDetail(this.$route.params.detail)
+        } else {
+          this.initProjectFormData()
+        }
+        if (!this.formData.handleDate) {
+          this.$set(this.formData, 'handleDate', new Date().getTime())
+        } else {
+          this.formData.handleDate = new Date(this.formData.handleDate).getTime()
+        }
+      })
+      this.$store.dispatch("cacheId", undefined);
+    },
+    methods: {
+      initProjectFormData(lock) {
+        const { id, code, name } = this.$route.query
+        this.formData = {
+          validateStatus: 2,
+          handleDate: new Date().getTime(),
+          proName: name,
+          proId: id,
+          proCode: code
+        }
+      },
+      getValueClaimEvidenceMastersDetail(id) {
+        return getValueClaimEvidenceMastersDetail(id).then(res => {
+          if (res.data) {
+            this.formData = res.data
+          } else {
+            this.initProjectFormData()
+          }
+        })
+      },
+      toipClick(type) {
+        if (this.disabled) return
+        if (type == 'contract' && !this.formData.proId) return this.$message.warning('请先选择项目')
+        this.type = type
+        this['visibleSync' + type.replace(/(^[\w\W])/, (res) => res.toLocaleUpperCase())] = true
+      },
+      selectionChange(row) {
+        this.selectedRow = row.selectedRow
+      },
+      handleChange() {
+        const row = this.selectedRow
+        if(!this.isSelectedRow(row)) return false;
+        if (Object.keys(row).length === 0) return
+        switch (this.type) {
+          case 'project':
+            this.$set(this.formData, 'proName', row.name)
+            this.$set(this.formData, 'proId', row.id)
+            this.$set(this.formData, 'proCode', row.code)
+            this.$set(this.formData, 'contractName', '')
+            this.$set(this.formData, 'contractId', '')
+            break
+          case 'contract':
+            this.$set(this.formData, 'contractName', row.name)
+            this.$set(this.formData, 'contractId', row.id)
+            break
+        }
+        this.isUpdate = false
+        this['visibleSync' + this.type.replace(/(^[\w\W])/, (res) => res.toLocaleUpperCase())] = false
+      },
+      initFormData(lock) {
+        const { proId, proName, proCode } = this.formData
+        const proData = {
+          id: proId,
+          name: proName,
+          code: proCode
+        }
+        if (lock) {
+          this.initProjectFormData()
+          this.$router.replace({
+            path: `/bpmaManager/outputValue/claimDemage/evidence/id/0/detail`,
+            query: proData
+          })
+        } else {
+          this.$router.replace({
+            path: `/bpmaManager/outputValue/claimDemage/evidence/id/0/${this.formData.id}`,
+            query: proData
+          })
+        }
+      },
+      deleteData() {
+        if (this.formData.id) {
+          this.$confirm('亲，您是否确定删除当前数据，删除后数据不能恢复！', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          }).then(res => {
+            deleteValueClaimEvidenceMaster(this.formData.id).then(res => {
+              if (res.rel) {
+                this.$message.success(res.message)
+                this.initFormData(true)
+              }
+            })
+          }).catch(err => console.warn(err))
+        } else {
+          this.$message.warning('亲，请先保存后在操作')
+        }
+      },
+      review() {
+        this.$confirm(' 亲，您是否确定审核当前数据，审核后数据不能修改！', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(async res => {
+          await this.save(true)
+          reviewValueClaimEvidenceMaster(this.formData).then(res => {
+            if (res.rel) {
+              this.isUpdate = true
+              this.formData = res.data
+              this.formData.handleDate = new Date(this.formData.handleDate).getTime()
+              this.$message.success(res.message)
+            }
+          })
+        }).catch(err => '')
+      },
+      save(lock) {
+        return new Promise((reslove, reject) => {
+          let res
+          this.$refs.form.validate(async valid => {
+            if (!valid) {
+              this.$message.warning('亲，请先完善和修正错误数据！')
+              return this.$nextTick(() => document.querySelector('.is-error input,.is-error textarea').focus())
+            }
+            if (this.formData.id) {
+              res = await poatValueClaimEvidenceMaster(this.formData)
+            } else {
+              res = await saveValueClaimEvidenceMaster(this.formData)
+            }
+            if (!res.rel) return
+            this.formData = res.data
+            if(!this.$refs.refBasicUpload.submitUpload(this.formData.id)) return false;
+            this.formData.handleDate = new Date(this.formData.handleDate).getTime()
+            if (lock !== true) {
+              this.$message.success(res.message)
+            }
+            this.$nextTick(() => {
+              this.isUpdate = true
+              reslove()
+            })
+          })
+        })
+      },
+      validatePass(rule, value, callback) {
+        value = Number(value)
+        if (value < 0 || value > 1) {
+          callback(new Error())
+        }
+        callback()
+      }
+    }
+  }
+</script>
+
+<style scoped>
+</style>

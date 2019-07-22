@@ -1,0 +1,50 @@
+[{
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "width": 80,
+    "align": "center"
+}, {
+    "prop": "code",
+    "name": "单据编号",
+    "width": 130
+}, {
+    "prop": "contractName",
+    "name": "合同名称",
+    "width": 200
+}, {
+    "prop": "name",
+    "name": "变更名称",
+    "width": 200
+}, {
+    "prop": "orignalCode",
+    "name": "原变更单号",
+    "width": 120
+}, {
+    "prop": "handlePerson",
+    "name": "变更人员"
+}, {
+    "prop": "handleDate",
+    "name": "变更日期",
+    "width": 100,
+    "align": "center"
+}, {
+    "prop": "reason",
+    "name": "变更原因",
+    "width": 120
+}, {
+    "prop": "content",
+    "name": "变更内容",
+    "width": 120
+}, {
+    "prop": "effect",
+    "name": "变更影响",
+    "width": 120
+}, {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+}, {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+}]

@@ -1,0 +1,57 @@
+[
+    {
+        "text": "物资编码",
+        "value": "code",
+        "width": "160"
+    },
+    {
+        "text": "物资名称",
+        "value": "name",
+        "width": "120"
+    },
+    {
+        "text": "规格型号",
+        "value": "model",
+        "width": "100"
+    },
+    {
+        "text": "计量单位",
+        "value": "unit",
+        "width": "100"
+    },
+    {
+        "text": "单价",
+        "value": "unitPrice",
+        "width": "150",
+        "showTable": true,
+        "toFixed": true,
+        "noLess": true,
+        "types": true
+    },
+    {
+        "text": "数量",
+        "value": "sum",
+        "width": "150",
+        "showTable": true,
+        "types": true
+    },
+    {
+        "text": "金额",
+        "value": "totalPrice",
+        "width": "200",
+        "disable":true,
+        "showTable": true,
+        "types": true
+    },
+    {
+        "text": "配送方式",
+        "value": "transportMode",
+        "width": "200",
+        "select":true
+    },
+    {
+        "text": "摘要",
+        "value": "summary",
+        "showTable": true
+    }
+]

@@ -1,0 +1,44 @@
+[
+  {
+      "text": "物资编码",
+      "value": "code",
+      "width":"160"
+  },
+  {
+      "text": "物资名称",
+      "value": "name",
+      "width":"200"
+  },
+  {
+      "text": "规格型号",
+      "value": "model",
+      "width":"150"
+  },
+  {
+      "text": "计量单位",
+      "value": "unit",
+      "width":"80"
+  },
+  {
+      "text": "拟采购量",
+      "value": "applySum",
+      "width":"200",
+      "showTable":true,
+      "min":0,
+      "types":true
+  },
+  {
+      "text": "最高限价",
+      "value": "maxPrice",
+      "width":"200",
+      "showTable":true,
+      "min":0,
+      "types":true
+  },
+  {
+      "text": "摘要",
+      "value": "summary",
+      "align":"left",
+      "showTable":true
+  }
+]

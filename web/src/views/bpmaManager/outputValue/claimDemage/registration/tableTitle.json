@@ -1,0 +1,90 @@
+[
+  {
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+  },
+  {
+    "prop": "code",
+    "name": "单据编码",
+    "align": "center",
+    "width": 130
+  },
+  {
+    "prop": "name",
+    "name": "索赔名称",
+    "width": 200
+  },
+  {
+    "prop": "proName",
+    "name": "项目名称",
+    "width": 200
+  },
+  {
+    "prop": "contractName",
+    "name": "合同名称",
+    "width": 200
+  },
+  {
+    "prop": "claimProofMasterCode",
+    "name": "索赔取证单号",
+    "align": "center",
+    "width": 110
+  },
+  {
+    "prop": "approvePrice",
+    "name": "内部核定金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "applyPrice",
+    "name": "申报索赔金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "payPrice",
+    "name": "最终索赔金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "handlePerson",
+    "name": "承办人员"
+  },
+  {
+    "prop": "handleDate",
+    "name": "完成日期",
+    "align": "center",
+    "width": 100
+  },
+  {
+    "prop": "ifPay",
+    "name": "是否结算",
+    "align": "center"
+  },
+  {
+    "prop": "payedPrice",
+    "name": "结算金额",
+    "align": "right",
+    "width": 110
+  },
+  {
+    "prop": "payedCode",
+    "name": "结算单号",
+    "width": 120,
+    "align": "center"
+  },
+  {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+  },
+  {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+  }
+]

@@ -1,0 +1,46 @@
+[{
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+}, {
+    "prop": "code",
+    "name": "评审单号",
+    "width": 130
+}, {
+    "prop": "name",
+    "name": "合同名称",
+    "width": 200
+}, {
+    "prop": "beforeTaxPrice",
+    "name": "价税合计金额",
+    "align": "right",
+    "width": 110,
+    "format": "formatToThousands"
+}, {
+    "prop": "afterTaxPrice",
+    "align": "right",
+    "name": "税后合计金额",
+    "width": 110
+}, {
+    "prop": "invoiceType",
+    "name": "发票类型",
+    "width": 120
+}, {
+    "prop": "invoiceTaxRate",
+    "name": "发票税率",
+    "align": "right"
+}, {
+    "prop": "tax",
+    "name": "应交税额",
+    "align": "right",
+    "width": 110
+}, {
+    "prop": "inputPerson",
+    "name": "登记人员",
+    "width": 110
+}, {
+    "prop": "inputTime",
+    "name": "登记时间",
+    "width": 160
+}]

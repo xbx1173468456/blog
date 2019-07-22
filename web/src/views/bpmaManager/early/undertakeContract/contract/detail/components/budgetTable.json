@@ -1,0 +1,54 @@
+[{
+  "prop": "code",
+  "name": "系统编码",
+  "width": 200
+}, {
+  "prop": "budgetCode",
+  "name": "预算编码",
+  "input": "input"
+}, {
+  "prop": "name",
+  "name": "预算名称",
+  "input": "input"
+}, {
+  "prop": "proFeature",
+  "name": "项目特征",
+  "input": "input"
+}, {
+  "prop": "unitsId",
+  "name": "计量单位ID",
+  "width": 100,
+  "input": "input"
+}, {
+  "prop": "totalQuantities",
+  "name": "总工程量",
+  "input": "input"
+}, {
+  "prop": "unitPrice",
+  "name": "预算单价",
+  "input": "input"
+}, {
+  "prop": "totalPrice",
+  "name": "预算合价"
+}, {
+  "prop": "ifSubcontract",
+  "name": "是否分包",
+  "input": "checkbox",
+  "align": "center"
+}, {
+  "prop": "subQuantities",
+  "name": "分包工程量",
+  "width": 100,
+  "input": "input"
+}, {
+  "prop": "subUnitPrice",
+  "name": "分包单价",
+  "input": "input"
+}, {
+  "prop": "subTotalPrice",
+  "name": "分包合价"
+}, {
+  "prop": "summary",
+  "name": "摘要",
+  "input": "input"
+}]

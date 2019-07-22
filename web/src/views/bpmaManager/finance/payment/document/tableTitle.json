@@ -1,0 +1,78 @@
+[{
+  "prop": "validateStatus",
+  "name": "审核状态",
+  "align": "center",
+  "width": 80
+}, {
+  "prop": "code",
+  "name": "单据编码",
+  "align": "center",
+  "width": 130
+}, {
+  "prop": "name",
+  "name": "单据名称",
+  "width": 200
+}, {
+  "prop": "proName",
+  "name": "项目名称",
+  "width": 200
+}, {
+  "prop": "subEnterpriseName",
+  "name": "单位名称",
+  "width": 200
+}, {
+  "prop": "contractName",
+  "name": "合同名称",
+  "width": 200
+}, {
+  "prop": "totalShouldPayPrice",
+  "name": "累计应付总额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "totalBillPrice",
+  "name": "累计收票总额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "totalPayPrice",
+  "name": "累计付款总额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "totalUnpayPrice",
+  "name": "累计未付总额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "applyPrice",
+  "name": "本次申请总额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "payPrice",
+  "name": "本次实付总额",
+  "align": "right",
+  "width": 110
+}, {
+  "prop": "payMode",
+  "name": "付款方式"
+}, {
+  "prop": "payAccount",
+  "name": "付款账号",
+  "align": "center",
+  "width": 190
+}, {
+  "prop": "incomeAccount",
+  "name": "收款账号",
+  "align": "center",
+  "width": 190
+}, {
+  "prop": "inputPerson",
+  "name": "登记人员",
+  "width": 110
+}, {
+  "prop": "inputTime",
+  "name": "登记时间",
+  "width": 160
+}]

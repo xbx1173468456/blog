@@ -1,0 +1,37 @@
+[{
+    "prop": "validateStatus",
+    "name": "审核状态",
+    "align": "center",
+    "width": 80
+}, {
+    "prop": "code",
+    "name": "单据编码",
+    "align": "center"
+}, {
+    "prop": "name",
+    "name": "证据名称",
+    "align": "center"
+}, {
+    "prop": "proName",
+    "name": "项目名称",
+    "align": "center"
+}, {
+    "prop": "contractName",
+    "name": "合同名称",
+    "align": "center"
+}, {
+    "prop": "invoiceType",
+    "name": "证据介质",
+    "align": "center"
+}, {
+    "prop": "handlePerson",
+    "name": "取证人员",
+    "align": "center"
+},  {
+    "prop": "inputPerson",
+    "name": "登记人员",
+     "width": 110
+}, {
+    "prop": "inputTime",
+    "name": "登记时间"
+}]
